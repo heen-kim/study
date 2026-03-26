@@ -31,12 +31,14 @@ header, footer {
 .logo-box {
     width: 200px;
     align-self: center;
+    margin-left: 20px;
 }
 
 .menu-box {
     flex-grow: 1;
     position: relative;
     z-index: 1;
+    margin-right: 20px;
 }
 
 /* 1차 메뉴 */
@@ -56,6 +58,7 @@ header, footer {
 
 .menu-box > ul > li > a {
     font-size: 16px;
+    height: 40px;
     line-height: 40px;
     font-weight: bold;
     text-align: center;
@@ -81,6 +84,7 @@ header, footer {
 
 .menu2 > li > a {
     font-size: 14px;
+    height: 40px;
     line-height: 40px;
     font-weight: bold;
     text-align: center;
@@ -104,16 +108,11 @@ header, footer {
     overflow: hidden;
 }
 
-.slide-box > .slide-3600 {
-    width: 3600px;
-    /* display: flex; */
+.slide-box > .slide-900 {
+    height: 900px;  
 }
 
-.slide-box > .slide-3600 > ul {
-    display: flex;
-}
-
-.slide-box > .slide-3600 > ul > .slide {
+.slide-box > .slide-900 > ul > .slide {
     width: 1200px;
     flex-shrink: 0;
     height: 300px;
@@ -138,14 +137,104 @@ header, footer {
 .content {
     height: 200px;
     display: flex;
+    box-sizing: border-box;
 }
 
 .box1 {
     width: 400px;
+    margin: 10px;
 }
 
 .box2, .box3 {
     flex-grow: 1; flex-basis: 0;
+}
+
+/* 탭 메뉴 */
+.content > .box1 > .tab-menu {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.content > .box1 > .tab-menu > li > .tab-head {
+    border: 1px solid gray;
+    border-bottom: none;
+    background-color: lightgray;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+}
+
+.content > .box1 > .tab-menu > li.active > .tab-head {
+    background-color: #fff;
+}
+
+.content > .box1 > .tab-menu > li.active > .tab-body {
+    z-index: 1;
+}
+
+.content > .box1 > .tab-menu > li:first-child> a {
+    border-right: none;
+}
+
+/* 탭 바디 */
+.content > .box1 > .tab-menu > li > .tab-body {
+    border: 1px solid gray;
+    background-color: #fff;
+    position: absolute;
+    top: 30px; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
+
+/* 탭 바디 - 공지사항 */
+.notice > ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notice > ul > li {
+    flex-grow: 1; flex-basis: 0;
+}
+
+.notice > ul > li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.notice > ul > li:nth-child(2n) > a {
+    background-color: lightgray;
+}
+
+.notice > ul > li > a > span {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.notice > ul > li > a:hover > span {
+    font-weight: bold;
+}
+
+/* 탭 바디 - 갤러리 */
+.gallery > ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery > ul > li > a {
+    width: 110px;
+}
+
+.gallery > ul > li:hover > a {
+    opacity: 0.5;
 }
 
 

@@ -2,13 +2,13 @@ $(document).ready(function(){
 
     // 슬라이드 구현
     setInterval(function(){
-        $('.slide-3600').delay(2000);
-        $('.slide-3600').animate({marginLeft:-1200});
-        $('.slide-3600').delay(2000);
-        $('.slide-3600').animate({marginLeft:-2400});
-        $('.slide-3600').delay(2000);
-        $('.slide-3600').animate({marginLeft:0});
-        $('.slide-3600').delay(2000);
+        $('.slide-900').delay(2000);
+        $('.slide-900').animate({marginTop:-300});
+        $('.slide-900').delay(2000);
+        $('.slide-900').animate({marginTop:-600});
+        $('.slide-900').delay(2000);
+        $('.slide-900').animate({marginTop: 0});
+        $('.slide-900').delay(2000);
     });
 
 
@@ -17,5 +17,13 @@ $(document).ready(function(){
         $('.menu2').stop().slideDown(500);
     }).mouseout(function(){
         $('.menu2').stop().slideUp(500);
+    });
+
+    // 탭 메뉴 구현
+    $(function(){
+    $(".tab-menu>li").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        return false;
+    });
     });
 });
