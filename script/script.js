@@ -20,10 +20,8 @@ $(document).ready(function(){
     });
 
     // 탭 메뉴 구현
-    $(function(){
     $(".tab-menu>li").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
         return false;
-    });
     });
 });
