@@ -112,9 +112,11 @@ header, footer {
 .slide-box > .slide-3600 > ul {
     display: flex;
 }
+
 .slide-box > .slide-3600 > ul > .slide {
     width: 1200px;
     flex-shrink: 0;
+    height: 300px;
     position: relative;
 }
 
@@ -123,6 +125,13 @@ header, footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    width: 500px;
+    text-align: center;
+    background-color: rgb(40, 40, 40, 0.5);
+    color: #fff;
 }
 
 /* 콘텐츠 */
