@@ -9,19 +9,59 @@
     <script src="./script/script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <!-- 헤더 -->
-        <header class="top-bar">
-            <div class="logo">
+    <!-- 헤더 -->
+    <header>
+        <div class="inner">
+            <div class="logo-box">
                 <a href="#"><img src="./images/logo.png" alt="로고"></a>
             </div>
-            <div class="menu-box">메뉴
-                <nav>네비바</nav>
-            </div>
-        </header>
+            <nav class="menu-box">
+                <!-- 1차 메뉴 -->
+                <ul>
+                    <li>
+                        <a href="#">탑</a>
+                        <ul class="menu2">
+                            <li><a href="#">아이템1</a></li>
+                            <li><a href="#">아이템2</a></li>
+                            <li><a href="#">아이템3</a></li>
+                            <li><a href="#">아이템4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">아우터</a>
+                        <ul class="menu2">
+                            <li><a href="#">아이템1</a></li>
+                            <li><a href="#">아이템2</a></li>
+                            <li><a href="#">아이템3</a></li>
+                            <li><a href="#">아이템4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">팬츠</a>
+                        <ul class="menu2">
+                            <li><a href="#">아이템1</a></li>
+                            <li><a href="#">아이템2</a></li>
+                            <li><a href="#">아이템3</a></li>
+                            <li><a href="#">아이템4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">악세사리</a>
+                        <ul class="menu2">
+                            <li><a href="#">아이템1</a></li>
+                            <li><a href="#">아이템2</a></li>
+                            <li><a href="#">아이템3</a></li>
+                            <li><a href="#">아이템4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <!-- 메인 -->
-        <main>
+    <!-- 메인 -->
+    <main>
+        <div class="wrap">
             <div class="slide-box">
                 <div class="slide-3600">
                     <ul>
@@ -51,10 +91,14 @@
                 <div class="box2">배너</div>
                 <div class="box3">바로가기</div>
             </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- 푸터 -->
-        <footer>하단부분</footer>
-    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+            하단부분
+        </div>
+    </footer>
 </body>
 </html>

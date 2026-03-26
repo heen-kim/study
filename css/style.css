@@ -15,38 +15,89 @@ img {
     object-fit: cover;
 }
 
-h1 { margin: 0;}
-
-* { border: 1px solid coral;}
-
-.container {
-    width: 1200px; margin: auto;
-    background-color: gray;
+/* 헤더 시작 */
+header, footer { 
+    width: 100%; height: 100px;
+    background-color: rgb(226, 224, 224); 
 }
 
-/* 헤더 시작 */
-.top-bar, footer { height: 100px;}
-
-.top-bar {
+.inner {
+    width: 1200px; 
+    height: 100%;
+    margin: auto;
     display: flex;
 }
 
-.logo {
+.logo-box {
     width: 200px;
     align-self: center;
 }
 
 .menu-box {
     flex-grow: 1;
+    position: relative;
+    z-index: 1;
 }
 
-nav {
-    background-color: red;
+/* 1차 메뉴 */
+.menu-box > ul {
     position: absolute;
+    display: flex;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.menu-box > ul > li {
+    width: 200px;
+    background-color: rgb(49, 97, 116);
+    position: relative;
+}
+
+.menu-box > ul > li > a {
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.menu-box > ul > li > a:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+/* 2차 메뉴 */
+.menu2 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.menu2 > li {
+    width: 200px;
+    background-color: #fff;
+}
+
+.menu2 > li > a {
+    font-size: 14px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.menu2 > li > a:hover {
+    background-color: #a7a7a7;
 }
 /* 헤더 끝 */
 
+
 /* 메인 시작 */
+.wrap {
+    width: 1200px; margin: auto;
+}
+
 /* 슬라이드 */
 .slide-box { 
     height: 300px;
@@ -87,3 +138,7 @@ nav {
 .box2, .box3 {
     flex-grow: 1; flex-basis: 0;
 }
+
+
+
+    
