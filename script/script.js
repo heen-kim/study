@@ -20,8 +20,17 @@ $(document).ready(function(){
     });
 
     // 탭 메뉴 구현
-    $(".tab-menu>li").click(function(){
-        $(this).addClass("active").siblings().removeClass("active");
+    $('.tab-menu>li').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
         return false;
+    });
+
+    // 팝업 구현
+    $('.notice li:first-child').click(function(){
+        $('#popcon').addClass('active');
+    });
+
+    $('.popup>button').click(function(){
+        $('#popcon').removeClass('active');
     });
 });

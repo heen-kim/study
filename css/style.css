@@ -147,6 +147,8 @@ header, footer {
 
 .box2, .box3 {
     flex-grow: 1; flex-basis: 0;
+    position: relative;
+    margin: 10px;
 }
 
 /* 탭 메뉴 */
@@ -236,6 +238,58 @@ header, footer {
 .gallery > ul > li:hover > a {
     opacity: 0.5;
 }
+
+/* 배너 & 바로가기 */
+.box2 span, .box3 span {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(58, 58, 58, 0.5);
+    color: #fff;
+    width: 100px; height: 40px; line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box2 img, .box3 img {
+    height: 180px;
+}
+/* 메인 끝 */
+
+/* 팝업 */
+#popcon {
+    height: 100%; width: 100%;
+    background-color: rgba(58, 58, 58, 0.5);
+    z-index: 3;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex; 
+    align-items: center; justify-content: center;
+    display: none;
+}
+
+#popcon.active {
+    display: flex;
+}
+
+.popup {
+    background-color: #fff;
+    border: 1px solid gray;
+    text-align: center;
+    height: 400px; width: 500px;
+    position: relative;
+}
+
+.popup > button {
+    position: absolute;
+    bottom: 20px; right: 20px;
+    cursor: pointer;
+}
+
+.popup > p {
+    line-height: 25px;
+}
+
 
 
 
