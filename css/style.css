@@ -240,19 +240,23 @@ header, footer {
 }
 
 /* 배너 & 바로가기 */
-.box2 span, .box3 span {
+.box span {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(58, 58, 58, 0.5);
+    background-color: rgba(58, 58, 58, 0.6);
     color: #fff;
     width: 100px; height: 40px; line-height: 40px;
     text-align: center;
     font-weight: bold;
 }
 
-.box2 img, .box3 img {
+.box img {
     height: 180px;
+}
+
+.box > a:hover > img {
+    opacity: 0.5;
 }
 /* 메인 끝 */
 
@@ -290,6 +294,33 @@ header, footer {
     line-height: 25px;
 }
 
+/* 푸터 시작 */
+.ft-inner {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ft-logo {
+    width: 150px;
+    margin-left: 50px;
+}
+
+.sns {
+    margin-right: 50px;
+}
+
+.sns > ul {
+    display: flex;
+    gap: 10px;
+}
+
+.sns > ul > li > a {
+    width: 40px;
+}
+
+.sns > ul > li:hover > a {
+    opacity: 0.5;
+}
 
 
 
